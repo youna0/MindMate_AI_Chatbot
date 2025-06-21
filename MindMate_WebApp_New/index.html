@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate - AI Therapist Chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>MindMate: AI Therapist Chatbot</h1>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="userInput" placeholder="How are you feeling?" />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <h2>Track Your Mood</h2>
+    <select id="moodSelect" onchange="updateMood()">
+        <option value="">Select Mood</option>
+        <option value="1">Sad</option>
+        <option value="2">Neutral</option>
+        <option value="3">Happy</option>
+    </select>
+    <canvas id="moodChart" width="400" height="200"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
